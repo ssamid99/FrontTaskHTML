@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      header {
+        margin: 10px;
+      }
+      .center {
+        margin: auto;
+        width: 390px;
+        padding: 10px;
+      }
+      .firstHeader {
+        text-align: left;
+        border-bottom: 1px solid rgb(196, 196, 196);
+        padding-bottom: 25px;
+      }
+      .input {
+        height: 35px;
+        width: 350px;
+        border: 1px;
+        border-color: rgb(196, 196, 196);
+        border-style: solid;
+        padding-left: 10px;
+      }
+      .places {
+        margin: 15px;
+        width: 380px;
+      }
+      button {
+        color: white;
+        background-color: rgb(69, 155, 118);
+        border: none;
+        width: 366px;
+        height: 40px;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+      .checkboxStyle {
+        display: flex;
+        cursor: pointer;
+      }
+      .check {
+        width: 5%;
+        margin-top: 10px;
+      }
+      .def {
+        width: 95%;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 385px">
+      <header>
+        <div class="firstHeader">
+          Have an account? <a href="#" style="text-decoration: none">Log In</a>
+        </div>
+        <h1>Sign Up</h1>
+      </header>
+    </div>
+    <form>
+      <div class="places">
+        <input
+          class="input"
+          type="text"
+          value="Caroline Forsey"
+          placeholder="Fullname"
+          required
+        />
+      </div>
+      <div class="places">
+        <label for="email"
+          >Did you mean
+          <a href="#" style="text-decoration: none">cforsey@gmail.com</a
+          >?</label
+        >
+        <br />
+        <input
+          style="margin-top: 10px"
+          class="input"
+          type="email"
+          id="email"
+          value="cforsey@gmail.com"
+          placeholder="example@gmail.com"
+          required
+        />
+      </div>
+      <div class="places">
+        <input
+          class="input"
+          type="email"
+          id="email"
+          placeholder="Re-enter email"
+          required
+        />
+      </div>
+      <div class="places">
+        <input class="input" type="password" placeholder="Password" required />
+      </div>
+      <div class="places">
+        <input
+          class="input"
+          type="password"
+          placeholder="Re-enter password"
+          required
+        />
+      </div>
+      <div class="places">
+        <label for="check" class="checkboxStyle">
+          <div class="check"><input type="checkbox" id="checkbox" /></div>
+          <div class="def">
+            Receive our weekly newsletter and other occasional updates
+          </div>
+        </label>
+      </div>
+      <div class="places">
+        <button type="submit" style="margin-top: 20px">Create Account</button>
+      </div>
+    </form>
+  </body>
+</html>
